@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/table-mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Table Style 3</title>
+</head>
+
+<body>
+  <div class="ds-container">
+    <div class="table-title">Style 3: Tables with Subheadings and Footnotes</div>
+    <table class="responsive-table">
+      <caption id="desktop-caption">Popular Films.&nbsp; <span class="wb-inv-caption">Footnotes for this table will appear below.</span></caption>
+      <thead>
+        <tr>
+          <th class="col" scope="col">Film title</th>
+          <th class="col" scope="col">Released</th>
+          <th class="col" scope="col">Studio</th>
+          <th class="col" scope="col">Budget</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="subheading-kids" scope="row" class="subheading" colspan="4">Kids</td>
+        </tr>
+        <tr aria-labelledby="subheading-kids" class="trow">
+          <th scope="row">Minions</th>
+          <td data-title="Released">2015</td>
+          <td data-title="Studio">Universal</td>
+          <td data-title="Column heading content aligns to the bottom of the cell.">$1,159,444,662 <sup tab-id="subheading-kids"><a class="by-keyboard" id="fn1-1-rf" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup></td>
+        </tr> 
+        <tr aria-labelledby="subheading-kids" class="trow">
+          <th scope="row">Toy Story 4</th>
+          <td data-title="Released">2019</td>
+          <td data-title="Studio">Disney Pixar</td>
+          <td data-title="Column heading content aligns to the bottom of the cell.">$1,073,394,593</td>
+        </tr>
+        <tr aria-labelledby="subheading-kids" class="trow-last">
+          <th scope="row">Toy Story 3</th>
+          <td data-title="Released">2010</td>
+          <td data-title="Studio">Disney Pixar <sup tab-id="subheading-kids"><a class="by-keyboard" id="fn1-2-rf" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup></td>
+          <td data-title="Column heading content aligns to the bottom of the cell.">$1,066,970,811</td>
+        </tr>
+
+        
+        <tr>
+          <td id="subheading-fantasy" scope="row" class="subheading" colspan="4">Fantasy</td>
+        </tr>
+        <tr aria-labelledby="subheading-fantasy" class="trow">
+          <th scope="row">Despicable Me 3</th>
+          <td data-title="Released">2017</td>
+          <td data-title="Studio">Universal</td>
+          <td data-title="Column heading content aligns to the bottom of the cell.">$1,034,800,131</td>
+        </tr>
+        <tr aria-labelledby="subheading-fantasy" class="trow-last">
+          <th scope="row">Finding Dory</th>
+          <td data-title="Released">2016</td>
+          <td data-title="Studio">Disney Pixar</td>
+          <td data-title="Column heading content aligns to the bottom of the cell.">$1,028,570,942<sup tab-id="subheading-fantasy"><a class="by-keyboard" id="fn*-1-rf" href="#fn*"><span class="wb-inv">Footnote </span>*</a></sup></td>
+        </tr>
+
+
+        <tr>
+          <td id="subheading-action" scope="row" class="subheading" colspan="4">Action</td>
+        </tr>
+        <tr aria-labelledby="subheading-action" class="trow">
+          <th scope="row">Gladiator</th>
+          <td data-title="Released">2017</td>
+          <td data-title="Studio">Universal</td>
+          <td data-title="Column heading content aligns to the bottom of the cell.">$1,034,800,131</td>
+        </tr>
+        <tr aria-labelledby="subheading-action" class="trow">
+          <th scope="row">Terminator</th>
+          <td data-title="Released">2017</td>
+          <td data-title="Studio">Universal</td>
+          <td data-title="Column heading content aligns to the bottom of the cell.">$1,034,800,131</td>
+        </tr>
+        <tr aria-labelledby="subheading-action" class="trow-last">
+          <th scope="row">Predator</th>
+          <td data-title="Released">2016</td>
+          <td data-title="Studio">Disney Pixar</td>
+          <td data-title="Column heading content aligns to the bottom of the cell.">$1,028,570,942</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 class="wb-inv-ref" id="footnote">Footnote</h2>
+    <ul id="tfooter" class="tfooter" role="list" aria-labelledby="footnote">
+        <li>
+          <div>
+            <a class="by-keyboard footnote" onclick="checkTabState('fn*')" id="fn*" href="#fn*-1-rf"><span class="wb-inv">Go to reference for footnote </span>*</a>
+          </div>
+          <div>Percentages are based on numbers rounded to the nearest thousand and have been adjusted for trading (business) or paid days, where applicable.</div>
+        </li>
+        <li>
+          <div>
+            <a class="by-keyboard footnote" onclick="checkTabState('fn1')" id="fn1" href="#fn1-1-rf"><span class="wb-inv">Go to reference for footnote </span>1</a>
+          </div>
+          <div>Percentages are based on numbers rounded to the nearest thousand and have been adjusted for trading (business) or paid days, where applicable.</div>
+        </li>
+    </ul>
+  </div>
+<div style="padding-top: 32px; padding-left: 40%; padding-bottom: 80px;">
+<a href="table-style-4.html">Next Style</a>
+</div>
+<div style="padding-left: 35%;">
+<p >Table User Tests</p>
+</div>
+
+</body>
+<script src="js/table-mobile.js"></script>
+</html>

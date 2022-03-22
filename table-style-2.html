@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/table-mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Table Style 2</title>
+</head>
+
+<body>
+  <div class="ds-container">
+    <div class="table-title">Style 2: Tables with Footnotes</div>
+    <table class="responsive-table">
+      <caption>Popular Films.&nbsp; <span class="wb-inv-caption">Footnotes for this table will appear below.</span></caption>
+      <thead>
+        <tr>
+          <th class="col" scope="col">Film title</th>
+          <th class="col" scope="col">Released</th>
+          <th class="col" scope="col">Studio</th>
+          <th class="col" scope="col">Budget</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="nsh-1" class="trow-nsh">
+          <th scope="row" class="no-subheading">The Lion King (2019 remake)</th>
+          <td aria-labelledby="nsh-1" data-title="Released">2019</td>
+          <td aria-labelledby="nsh-1" data-title="Studio">Disney</td>
+          <td aria-labelledby="nsh-1" data-title="Column heading content aligns to the bottom of the cell.">$1,243,089,244</td>
+        </tr>
+        <tr id="nsh-2" class="trow-nsh">
+          <th scope="row" class="no-subheading">Frozen II</th>
+          <td aria-labelledby="nsh-2" data-title="Released">2019</td>
+          <td aria-labelledby="nsh-2" data-title="Studio">Disney</td>
+          <td aria-labelledby="nsh-2" data-title="Column heading content aligns to the bottom of the cell.">$1,342,980,442</td>
+        </tr>
+        <tr id="nsh-3" class="trow-nsh">
+          <th scope="row" class="no-subheading">Frozen</th>
+          <td aria-labelledby="nsh-3" data-title="Released">2013</td>
+          <td aria-labelledby="nsh-3" data-title="Studio">Disney</td>
+          <td aria-labelledby="nsh-3" data-title="Column heading content aligns to the bottom of the cell.">$1,523,531,222 <sup tab-id="nsh-3"><a class="by-keyboard" id="fn1-1-rf" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup></td>
+        </tr>
+        <tr id="nsh-4" class="trow-nsh">
+          <th scope="row" class="no-subheading">Incredibles 2</th>
+          <td aria-labelledby="nsh-4" data-title="Released">2018</td>
+          <td aria-labelledby="nsh-4" data-title="Studio">Disney Pixar</td>
+          <td aria-labelledby="nsh-4" data-title="Column heading content aligns to the bottom of the cell.">$1,243,089,244 <sup tab-id="nsh-4"><a class="by-keyboard" id="fn*-1-rf" href="#fn*"><span class="wb-inv">Footnote </span>*</a></sup></td>
+        </tr>
+      <tr id="nsh-5" class="trow-nsh">
+          <th scope="row" class="no-subheading">Terminator</th>
+          <td aria-labelledby="nsh-5" data-title="Released">2017</td>
+          <td aria-labelledby="nsh-5" data-title="Studio">Universal</td>
+          <td aria-labelledby="nsh-5" data-title="Column heading content aligns to the bottom of the cell.">$1,034,980,800</td>
+        </tr>
+        <tr id="nsh-6" class="trow-nsh">
+          <th scope="row" class="no-subheading">Predator</th>
+          <td aria-labelledby="nsh-6" data-title="Released">2016</td>
+          <td aria-labelledby="nsh-6" data-title="Studio">Disney</td>
+          <td aria-labelledby="nsh-6" data-title="Column heading content aligns to the bottom of the cell.">$1,028,980,000</td>
+        </tr>
+        <tr id="nsh-7" class="trow-nsh">
+          <th scope="row" class="no-subheading">Minions</th>
+          <td aria-labelledby="nsh-7" data-title="Released">2015</td>
+          <td aria-labelledby="nsh-7" data-title="Studio">Universal</td>
+          <td aria-labelledby="nsh-7" data-title="Column heading content aligns to the bottom of the cell.">$1,159,980,221</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2 class="wb-inv-ref" id="footnote">Footnote</h2>
+    <ul id="tfooter" class="tfooter" role="list" aria-labelledby="footnote">
+        <li>
+          <div>
+            <a class="by-keyboard" onclick="checkTabState('fn*')"  id="fn*" class="footnote" href="#fn*-1-rf"><span class="wb-inv">Go to reference for footnote </span>*</a>
+          </div>
+          <div>Percentages are based on numbers rounded to the nearest thousand and have been adjusted for trading (business) or paid days, where applicable.</div>
+        </li>
+        <li>
+          <div>
+            <a class="by-keyboard" onclick="checkTabState('fn1')"  id="fn1" class="footnote" href="#fn1-1-rf"><span class="wb-inv">Go to reference for footnote </span>1</a>
+          </div>
+          <div>Percentages are based on numbers rounded to the nearest thousand and have been adjusted for trading (business) or paid days, where applicable.</div>
+        </li>
+    </ul>
+  </div>
+<div style="padding-top: 32px; padding-left: 40%; padding-bottom: 80px;">
+<a href="table-style-3.html">Next Style</a>
+</div>
+<div style="padding-left: 35%;">
+<p >Table User Tests</p>
+</div>
+
+</body>
+<script src="js/table-mobile.js"></script>
+</html>
